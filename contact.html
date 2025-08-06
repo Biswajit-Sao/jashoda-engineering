@@ -3,68 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us | Jashoda Engineering Ventures</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Contact Page -->
-<section class="contact-section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="section-divider"></div>
+
+     <!-- Header with Sticky Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <!-- <img src="images/logo.png" alt="Jashoda Engineering Ventures"> -->
+                     <p>logo</p>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item active"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="about.html">About Us</a></li>
+                    <li class="nav-item"><a href="services.html">Services</a></li>
+                    <li class="nav-item"><a href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a href="products.html">Product Overview</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="cta-button">
+                    <a href="contact.html" class="btn primary-btn">Get a Quote</a>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
         </div>
-        <div class="contact-grid">
-            <div class="contact-info">
-                <div class="info-item">
-                    <div class="info-icon">
+    </header>
+
+    <!-- Contact Page Header -->
+    <header class="page-header contact-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>We're ready to help you with your solar energy needs</p>
+        </div>
+    </header>
+
+    <!-- Contact Options Section -->
+    <section class="contact-options">
+        <div class="container">
+            <div class="contact-methods">
+                <!-- Contact Card 1 -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our solar experts</p>
+                    <div class="contact-details">
+                        <a href="tel:+916295200829" class="contact-link">+91 62952 00829</a>
+                        <p>Mon-Sat: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Contact Card 2 -->
+                <div class="contact-card">
+                    <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <div class="info-content">
-                        <h3>Email</h3>
-                        <p>j.enggventures@gmail.com</p>
+                    <h3>Email Us</h3>
+                    <p>Send us your inquiries and project details</p>
+                    <div class="contact-details">
+                        <a href="mailto:j.enggventures@gmail.com" class="contact-link">j.enggventures@gmail.com</a>
+                        <p>Response within 24 hours</p>
                     </div>
                 </div>
-                <div class="info-item">
-                    <div class="info-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="info-content">
-                        <h3>Phone</h3>
-                        <p>+91 62952 00829</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <div class="info-icon">
+
+                <!-- Contact Card 3 -->
+                <div class="contact-card">
+                    <div class="contact-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <div class="info-content">
-                        <h3>Address</h3>
-                        <p>Salbagan Road, Street No. 2, Benachity, Durgapur, Paschim Bardhaman, WB – 713213</p>
+                    <h3>Visit Us</h3>
+                    <p>Our office in Durgapur, West Bengal</p>
+                    <div class="contact-details">
+                        <address>
+                            Salbagan Road, Street No. 2<br>
+                            Benachity, Durgapur<br>
+                            Paschim Bardhaman, WB - 713213
+                        </address>
+                        <a href="https://maps.google.com/?q=Jashoda+Engineering+Ventures+Durgapur" class="map-link" target="_blank">View on Map</a>
                     </div>
                 </div>
             </div>
-            <div class="contact-form">
-                <form id="contact-form">
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>Send Us a Message</h2>
+                <p>Fill out the form below and our team will get back to you within 24 hours</p>
+                
+                <form id="contactForm" class="contact-form">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <label for="name">Your Name*</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="">Select an option</option>
+                            <option value="residential">Residential Solar Inquiry</option>
+                            <option value="commercial">Commercial Solar Inquiry</option>
+                            <option value="industrial">Industrial Solar Inquiry</option>
+                            <option value="government">Government Project Inquiry</option>
+                            <option value="maintenance">Maintenance Service</option>
+                            <option value="other">Other</option>
+                        </select>
                     </div>
+                    
                     <div class="form-group">
-                        <input type="tel" placeholder="Your Phone">
+                        <label for="message">Your Message*</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn primary-btn">Send Message</button>
                     </div>
-                    <button type="submit" class="btn primary-btn">Send Message</button>
                 </form>
             </div>
+            
+            <div class="contact-info">
+                <h3>Why Contact Jashoda Engineering?</h3>
+                <ul class="benefits-list">
+                    <li><i class="fas fa-check-circle"></i> Free site evaluation and consultation</li>
+                    <li><i class="fas fa-check-circle"></i> Customized solar solutions</li>
+                    <li><i class="fas fa-check-circle"></i> Transparent pricing</li>
+                    <li><i class="fas fa-check-circle"></i> Government subsidy guidance</li>
+                    <li><i class="fas fa-check-circle"></i> After-sales support</li>
+                </ul>
+                
+                <div class="business-hours">
+                    <h4>Business Hours</h4>
+                    <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+                
+                <div class="emergency-contact">
+                    <h4>Emergency Support</h4>
+                    <p>For urgent solar system issues outside business hours:</p>
+                    <a href="tel:+919876543210" class="emergency-link">+91 98765 43210</a>
+                </div>
+            </div>
         </div>
-        <div class="contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.123456789012!2d87.321654!3d23.543210!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMyJzM1LjYiTiA4N8KwMTknMTkuNiJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Our Location</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.126897110926!2d87.3218763150134!3d23.86939308457962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDUyJzA5LjgiTiA4N8KwMTknMjcuNiJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                </iframe>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What information should I provide when contacting about a solar installation?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Please provide your location, average monthly electricity bill, available roof/ground space, and any specific requirements. This helps us give you the most accurate proposal.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How soon can you visit my site for assessment?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We typically schedule site visits within 2-3 business days of your inquiry, depending on your location in Eastern India.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you provide services outside West Bengal?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we serve all of Eastern India including Jharkhand, Bihar, and Odisha. Additional travel charges may apply for distant locations.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What's your response time for email inquiries?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We respond to all emails within 24 hours during business days. For urgent matters, please call us directly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <h2>Ready to Start Your Solar Journey?</h2>
+            <p>Contact us today for a free consultation and quote</p>
+            <div class="cta-buttons">
+                <a href="tel:+916295200829" class="btn primary-btn">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+                <a href="#contactForm" class="btn secondary-btn">Send Message</a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

@@ -1,8 +1,8 @@
 /* Base Styles & Variables */
 :root {
-  --primary-color: #FFA500; /* Orange - solar energy theme */
-  --secondary-color: #003366; /* Dark blue - professional contrast */
-  --accent-color: #FFD700; /* Gold accent */
+  --primary-color: #FFA500; 
+  --secondary-color: #003366; 
+  --accent-color: #FFD700;
   --light-color: #f8f9fa;
   --dark-color: #212529;
   --text-color: #333;
@@ -635,6 +635,7 @@ img {
 }
 
 /* CTA Section */
+
 .cta-section {
   padding: 5rem 0;
   background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.9)), url('images/cta-bg.jpg') no-repeat center center/cover;
