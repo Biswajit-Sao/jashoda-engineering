@@ -1,0 +1,383 @@
+/* Projects Page Styles */
+.projects-page {
+  padding-top: var(--header-height);
+}
+
+/* Page Header */
+.page-header.projects-header {
+  background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), 
+              url('/images/bsf-project.jpg') center/cover no-repeat;
+  color: var(--white);
+  /* padding: 6rem 0; */
+  padding: 8rem 0 5rem;
+  text-align: center;
+}
+
+.projects-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.projects-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Projects Filter */
+.projects-filter {
+  padding: 2rem 0;
+  background-color: var(--white);
+  position: sticky;
+  top: var(--header-height);
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  background-color: var(--light-color);
+  color: var(--text-color);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.filter-btn.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* Projects Gallery */
+.projects-gallery {
+  padding: 4rem 0;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  margin-bottom: 3rem;
+  transition: var(--transition);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.03);
+}
+
+.project-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0.3rem 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.project-content {
+  padding: 2rem;
+}
+
+.project-content h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+}
+
+.project-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-meta i {
+  color: var(--primary-color);
+}
+
+.project-features {
+  margin: 2rem 0;
+}
+
+.project-features h4 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.project-features ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.project-features li {
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.project-card .btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.project-card .btn:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+/* Projects Statistics */
+.projects-stats {
+  padding: 4rem 0;
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 2rem;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+}
+
+.stat-number span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Testimonials */
+.project-testimonials {
+  padding: 4rem 0;
+  background-color: var(--light-color);
+}
+
+.project-testimonials h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--secondary-color);
+}
+
+.testimonial-slider {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin: 0 1rem;
+}
+
+.testimonial-content {
+  position: relative;
+}
+
+.testimonial-content p {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.testimonial-content p::before,
+.testimonial-content p::after {
+  content: '"';
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.client-info {
+  text-align: right;
+}
+
+.client-name {
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.client-position {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Project CTA */
+.project-cta {
+  padding: 4rem 0;
+  background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), 
+              url('/images/bsf-project.jpg') center/cover no-repeat;
+  color: var(--white);
+  text-align: center;
+}
+
+.project-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  min-width: 200px;
+}
+
+.cta-buttons .secondary-btn {
+  background-color: transparent;
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.cta-buttons .secondary-btn:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+.cta-buttons .secondary-btn i {
+  margin-right: 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header.projects-header {
+    padding: 4rem 0 3rem;
+  }
+  
+  .projects-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .projects-header h1 {
+    font-size: 2rem;
+  }
+  
+  .project-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filter-options {
+    justify-content: flex-start;
+  }
+}
+
+.animate {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card, .stat-item, .testimonial {
+  opacity: 0;
+}

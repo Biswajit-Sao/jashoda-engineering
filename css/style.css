@@ -638,7 +638,7 @@ img {
 
 .cta-section {
   padding: 5rem 0;
-  background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.9)), url('images/cta-bg.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.9)), url('/images/bsf-project.jpg') no-repeat center center/cover;
   color: var(--white);
   text-align: center;
 }
@@ -866,8 +866,7 @@ img {
   }
   
   .cta-button {
-    margin-left: 0;
-    margin-top: 1rem;
+    display: none;
   }
   
   .hero-title {
@@ -910,3 +909,13 @@ img {
     padding: 1.5rem;
   }
 }
+
+
+
+
+
+
+
+
+
+

@@ -120,3 +120,34 @@ document.addEventListener('DOMContentLoaded', () => {
   // Show first testimonial
   showSlide(0);
 });
+
+
+
+
+
+
+
+// JavaScript for About Page
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
